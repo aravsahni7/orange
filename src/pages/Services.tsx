@@ -74,7 +74,7 @@ export default function ServicesPage() {
             SEVEN<br />CAPABILITIES.<br />
             <span className="text-[#F97316]">ONE PARTNER.</span>
           </h1>
-          <p className="text-white/35 mt-6 text-[15px] max-w-2xl leading-relaxed">
+          <p className="text-white/55 mt-6 text-[15px] max-w-2xl leading-relaxed">
             Each capability is staffed by specialists with decades of domain experience. Together, they form a complete, end-to-end sourcing solution — from first sketch to final shipment.
           </p>
         </div>
@@ -106,7 +106,7 @@ export default function ServicesPage() {
                 </h3>
 
                 {/* Body */}
-                <p className="text-white/35 text-[14px] leading-relaxed group-hover:text-white/50 transition-colors duration-300">
+                <p className="text-white/55 text-[14px] leading-relaxed group-hover:text-white/50 transition-colors duration-300">
                   {svc.body}
                 </p>
 
@@ -124,7 +124,7 @@ export default function ServicesPage() {
               style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>
               End-to-end.<br />Start to finish.
             </h2>
-            <p className={`text-white/35 text-[15px] leading-relaxed reveal reveal-d1 ${inView2 ? 'in-view' : ''}`}>
+            <p className={`text-white/55 text-[15px] leading-relaxed reveal reveal-d1 ${inView2 ? 'in-view' : ''}`}>
               We handle every stage of the supply chain — so you can focus on brand, sales, and growth rather than managing a fragmented vendor list.
             </p>
           </div>
@@ -166,10 +166,10 @@ export default function ServicesPage() {
                 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>
                 We've been on<br />your side of the table.
               </h2>
-              <p className={`text-white/38 text-[15px] leading-relaxed mb-8 reveal reveal-d1 ${inView3 ? 'in-view' : ''}`}>
+              <p className={`text-white/58 text-[15px] leading-relaxed mb-8 reveal reveal-d1 ${inView3 ? 'in-view' : ''}`}>
                 Our leadership spent years as country managers and buying managers for the same brands that now rely on us for sourcing. We don't just understand the supplier side — we understand what it feels like to be the client.
               </p>
-              <p className={`text-white/38 text-[15px] leading-relaxed reveal reveal-d2 ${inView3 ? 'in-view' : ''}`}>
+              <p className={`text-white/58 text-[15px] leading-relaxed reveal reveal-d2 ${inView3 ? 'in-view' : ''}`}>
                 That empathy changes everything: how we communicate, how we handle problems, how we protect your margin, and how we represent your brand in the factory.
               </p>
               <div className={`mt-8 reveal reveal-d3 ${inView3 ? 'in-view' : ''}`}>
@@ -207,7 +207,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
             <h3 className="font-outfit font-black text-white text-2xl md:text-3xl mb-2">Ready to get started?</h3>
-            <p className="text-white/35 text-[15px]">Tell us about your product — we'll tell you how we can help.</p>
+            <p className="text-white/55 text-[15px]">Tell us about your product — we'll tell you how we can help.</p>
           </div>
           <Link to="/contact"
             className="flex-shrink-0 inline-flex items-center gap-3 px-8 py-4 bg-[#F97316] text-white font-bold text-sm tracking-wide hover:bg-[#EA580C] transition-colors duration-150">

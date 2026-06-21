@@ -50,7 +50,7 @@ export default function AboutPage() {
             A DIFFERENT<br />KIND OF<br />
             <span className="text-[#F97316]">PARTNER.</span>
           </h1>
-          <p className="text-white/35 mt-6 text-[15px] max-w-2xl leading-relaxed">
+          <p className="text-white/55 mt-6 text-[15px] max-w-2xl leading-relaxed">
             Orange Sourcing is a one-stop destination for all your fashion needs, built on over 200 years of combined management experience.
           </p>
         </div>
@@ -90,7 +90,7 @@ export default function AboutPage() {
                 Seasoned professionals.
               </h2>
 
-              <div className={`space-y-5 text-white/42 leading-relaxed text-[15px] reveal reveal-d3 ${inView1 ? 'in-view' : ''}`}>
+              <div className={`space-y-5 text-white/60 leading-relaxed text-[15px] reveal reveal-d3 ${inView1 ? 'in-view' : ''}`}>
                 <p>
                   Orange Sourcing is a one-stop destination for all of your fashion needs. With a progressive
                   outlook and a well-balanced team of seasoned professionals across design, merchandise,
@@ -116,7 +116,7 @@ export default function AboutPage() {
                 ].map(item => (
                   <div key={item.label}>
                     <div className="text-white font-semibold text-sm">{item.label}</div>
-                    <div className="text-white/28 text-xs mt-0.5">{item.sub}</div>
+                    <div className="text-white/48 text-xs mt-0.5">{item.sub}</div>
                   </div>
                 ))}
               </div>
@@ -141,7 +141,7 @@ export default function AboutPage() {
                 Brands that<br />
                 <span className="text-[#F97316]">trust us.</span>
               </h2>
-              <p className={`text-white/38 text-[15px] leading-relaxed mb-10 reveal reveal-d2 ${inView3 ? 'in-view' : ''}`}>
+              <p className={`text-white/58 text-[15px] leading-relaxed mb-10 reveal reveal-d2 ${inView3 ? 'in-view' : ''}`}>
                 We have developed and nurtured long-lasting relationships with many global fashion brands across the UK, Europe, and the USA.
               </p>
 
@@ -160,9 +160,9 @@ export default function AboutPage() {
                           </span>
                         </div>
                         <div className="flex items-center gap-3 flex-shrink-0">
-                          <span className="text-white/20 text-[11px] font-medium tracking-wide">{reg.clients.length} brands</span>
+                          <span className="text-white/38 text-[11px] font-medium tracking-wide">{reg.clients.length} brands</span>
                           <svg
-                            className={`w-3.5 h-3.5 text-white/25 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+                            className={`w-3.5 h-3.5 text-white/42 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
                             viewBox="0 0 12 8" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square">
                             <path d="M1 1l5 5 5-5"/>
                           </svg>
@@ -193,7 +193,7 @@ export default function AboutPage() {
                   speed={0.003}
                   phi={0.3}
                 />
-                <p className="text-center text-white/20 text-[11px] font-semibold tracking-widest uppercase mt-4">
+                <p className="text-center text-white/38 text-[11px] font-semibold tracking-widest uppercase mt-4">
                   Drag to rotate
                 </p>
               </div>
@@ -211,7 +211,7 @@ export default function AboutPage() {
               style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>
               What drives us.
             </h2>
-            <p className={`text-white/35 text-[15px] leading-relaxed reveal reveal-d1 ${inView4 ? 'in-view' : ''}`}>
+            <p className={`text-white/55 text-[15px] leading-relaxed reveal reveal-d1 ${inView4 ? 'in-view' : ''}`}>
               Three core principles that run through every decision we make — from factory selection to final inspection.
             </p>
           </div>
@@ -239,7 +239,7 @@ export default function AboutPage() {
                 <div className="text-[#F97316]/30 font-mono text-xs font-bold mb-6">{v.icon}</div>
                 <div className="w-8 h-[2px] bg-[#F97316] mb-6 group-hover:w-16 transition-all duration-500" />
                 <h3 className="font-outfit font-black text-white text-xl mb-4">{v.title}</h3>
-                <p className="text-white/35 text-[14px] leading-relaxed">{v.body}</p>
+                <p className="text-white/55 text-[14px] leading-relaxed">{v.body}</p>
               </div>
             ))}
           </div>
@@ -251,7 +251,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
             <h3 className="font-outfit font-black text-white text-2xl md:text-3xl mb-2">Ready to partner with us?</h3>
-            <p className="text-white/35 text-[15px]">Let's start with a conversation about your sourcing needs.</p>
+            <p className="text-white/55 text-[15px]">Let's start with a conversation about your sourcing needs.</p>
           </div>
           <Link to="/contact"
             className="flex-shrink-0 inline-flex items-center gap-3 px-8 py-4 bg-[#F97316] text-white font-bold text-sm tracking-wide hover:bg-[#EA580C] transition-colors duration-150">

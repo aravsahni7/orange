@@ -19,7 +19,7 @@ export default function ContactPage() {
   const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setForm(f => ({ ...f, [k]: e.target.value }))
 
-  const inputClass = `w-full bg-[#161616] border border-white/[0.09] text-white text-[14px] px-4 py-3.5 outline-none focus:border-[#F97316] transition-colors duration-200 placeholder:text-white/18`
+  const inputClass = `w-full bg-[#161616] border border-white/[0.09] text-white text-[14px] px-4 py-3.5 outline-none focus:border-[#F97316] transition-colors duration-200 placeholder:text-white/35`
 
   return (
     <div style={{ paddingTop: '68px' }}>
@@ -37,7 +37,7 @@ export default function ContactPage() {
             START A<br />
             <span className="text-[#F97316]">CONVERSATION.</span>
           </h1>
-          <p className="text-white/35 mt-6 text-[15px] max-w-2xl leading-relaxed">
+          <p className="text-white/55 mt-6 text-[15px] max-w-2xl leading-relaxed">
             Whether you're developing a new collection, improving sourcing margins, or looking for a long-term partner — we would like to hear from you.
           </p>
         </div>
@@ -46,14 +46,14 @@ export default function ContactPage() {
       {/* What brings you here */}
       <section className="bg-[#0D0D0D] border-b border-white/[0.06] py-10">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-white/20 text-[10px] font-bold tracking-[0.22em] uppercase mb-4">What brings you here?</div>
+          <div className="text-white/38 text-[10px] font-bold tracking-[0.22em] uppercase mb-4">What brings you here?</div>
           <div className="flex flex-wrap gap-2">
             {REASONS.map(r => (
               <button key={r} onClick={() => setSelectedReason(selectedReason === r ? null : r)}
                 className={`px-4 py-2 text-[12px] font-semibold tracking-wide transition-all duration-150 cursor-pointer ${
                   selectedReason === r
                     ? 'bg-[#F97316] text-white'
-                    : 'border border-white/10 text-white/35 hover:border-white/22 hover:text-white/55'
+                    : 'border border-white/10 text-white/55 hover:border-white/22 hover:text-white/55'
                 }`}>
                 {r}
               </button>
@@ -107,11 +107,11 @@ export default function ContactPage() {
                   },
                 ].map(item => (
                   <div key={item.label} className="flex items-start gap-4">
-                    <div className="w-8 h-8 border border-white/[0.07] flex items-center justify-center flex-shrink-0 mt-0.5 text-white/30">
+                    <div className="w-8 h-8 border border-white/[0.07] flex items-center justify-center flex-shrink-0 mt-0.5 text-white/50">
                       {item.icon}
                     </div>
                     <div>
-                      <div className="text-white/20 text-[10px] font-bold tracking-[0.2em] uppercase mb-1.5">{item.label}</div>
+                      <div className="text-white/38 text-[10px] font-bold tracking-[0.2em] uppercase mb-1.5">{item.label}</div>
                       {item.href ? (
                         <a href={item.href} className="text-white/55 text-[14px] hover:text-[#F97316] transition-colors duration-200">
                           {item.value}
@@ -130,7 +130,7 @@ export default function ContactPage() {
                   <div className="w-1.5 h-1.5 bg-[#F97316] mt-1.5 flex-shrink-0 animate-pulse" />
                   <div>
                     <div className="text-white font-semibold text-sm mb-1">Typical response time</div>
-                    <div className="text-white/35 text-[13px] leading-relaxed">
+                    <div className="text-white/55 text-[13px] leading-relaxed">
                       We respond within 2 business days. For urgent enquiries, please call directly.
                     </div>
                   </div>
@@ -148,7 +148,7 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <h3 className="font-outfit font-black text-white text-3xl">Message sent.</h3>
-                  <p className="text-white/38 text-[15px]">We will be in touch within 2 business days.</p>
+                  <p className="text-white/58 text-[15px]">We will be in touch within 2 business days.</p>
                   <button onClick={() => { setSent(false); setSelectedReason(null) }}
                     className="mt-4 text-[#F97316] text-sm font-semibold hover:text-[#EA580C] transition-colors cursor-pointer">
                     Send another message
@@ -163,23 +163,23 @@ export default function ContactPage() {
                   )}
                   <div className="grid grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-white/28 text-[10px] font-bold tracking-[0.18em] uppercase mb-2">Name *</label>
+                      <label className="block text-white/48 text-[10px] font-bold tracking-[0.18em] uppercase mb-2">Name *</label>
                       <input type="text" required value={form.name} onChange={set('name')}
                         className={inputClass} placeholder="Your name" />
                     </div>
                     <div>
-                      <label className="block text-white/28 text-[10px] font-bold tracking-[0.18em] uppercase mb-2">Company</label>
+                      <label className="block text-white/48 text-[10px] font-bold tracking-[0.18em] uppercase mb-2">Company</label>
                       <input type="text" value={form.company} onChange={set('company')}
                         className={inputClass} placeholder="Your company" />
                     </div>
                   </div>
                   <div>
-                    <label className="block text-white/28 text-[10px] font-bold tracking-[0.18em] uppercase mb-2">Email *</label>
+                    <label className="block text-white/48 text-[10px] font-bold tracking-[0.18em] uppercase mb-2">Email *</label>
                     <input type="email" required value={form.email} onChange={set('email')}
                       className={inputClass} placeholder="you@company.com" />
                   </div>
                   <div>
-                    <label className="block text-white/28 text-[10px] font-bold tracking-[0.18em] uppercase mb-2">Message *</label>
+                    <label className="block text-white/48 text-[10px] font-bold tracking-[0.18em] uppercase mb-2">Message *</label>
                     <textarea required rows={6} value={form.message} onChange={set('message')}
                       className={`${inputClass} resize-none`}
                       placeholder={selectedReason ? `Tell us more about your ${selectedReason.toLowerCase()} needs...` : 'Tell us about your sourcing needs...'} />
@@ -188,7 +188,7 @@ export default function ContactPage() {
                     className="w-full py-4 bg-[#F97316] text-white font-bold text-sm tracking-wide hover:bg-[#EA580C] transition-colors duration-150 active:scale-[0.99] cursor-pointer">
                     Send Message
                   </button>
-                  <p className="text-white/18 text-[11px] text-center">
+                  <p className="text-white/35 text-[11px] text-center">
                     By submitting, you agree to be contacted by the Orange Sourcing team.
                   </p>
                 </form>

@@ -35,7 +35,7 @@ export default function PortfolioPage() {
             WHAT WE<br />
             <span className="text-[#F97316]">MAKE.</span>
           </h1>
-          <p className="text-white/35 mt-6 text-[15px] max-w-2xl leading-relaxed">
+          <p className="text-white/55 mt-6 text-[15px] max-w-2xl leading-relaxed">
             From womenswear to home textiles, leather goods to sustainable basics — a cross-section of product categories produced across our global factory network.
           </p>
         </div>
@@ -47,8 +47,8 @@ export default function PortfolioPage() {
           <div className="flex flex-wrap gap-6">
             {FILTERS.map(f => (
               <div key={f} className="flex items-baseline gap-1.5">
-                <span className="font-outfit font-black text-white/15 text-2xl">{catCounts[f]}</span>
-                <span className="text-white/25 text-[11px] font-semibold uppercase tracking-wider">{f}</span>
+                <span className="font-outfit font-black text-white/28 text-2xl">{catCounts[f]}</span>
+                <span className="text-white/42 text-[11px] font-semibold uppercase tracking-wider">{f}</span>
               </div>
             ))}
           </div>
@@ -65,7 +65,7 @@ export default function PortfolioPage() {
                 className={`px-4 py-1.5 text-[11px] font-bold tracking-[0.15em] uppercase transition-all duration-150 cursor-pointer ${
                   activeFilter === f
                     ? 'bg-[#F97316] text-white'
-                    : 'border border-white/12 text-white/35 hover:border-white/25 hover:text-white/60'
+                    : 'border border-white/12 text-white/55 hover:border-white/25 hover:text-white/60'
                 }`}>
                 {f}
                 <span className="ml-1.5 opacity-50">{catCounts[f]}</span>
@@ -82,7 +82,7 @@ export default function PortfolioPage() {
                 <div className="relative aspect-[3/4] overflow-hidden bg-[#161616]">
                   <img src={item.img} alt={item.title}
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-[1.07]"
-                    style={{ opacity: 0.55, filter: 'grayscale(10%)' }}
+                    style={{ opacity: 0.82, filter: 'grayscale(5%)' }}
                     loading="lazy" />
                   <div className="absolute inset-0"
                     style={{ background: 'linear-gradient(to top, rgba(10,10,10,0.95) 0%, transparent 50%)' }} />
@@ -100,7 +100,7 @@ export default function PortfolioPage() {
           </div>
 
           {/* Count */}
-          <div className="mt-8 text-white/15 text-[12px] font-semibold tracking-wide">
+          <div className="mt-8 text-white/28 text-[12px] font-semibold tracking-wide">
             Showing {filtered.length} of {PORTFOLIO.length} pieces
           </div>
         </div>

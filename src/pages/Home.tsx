@@ -99,7 +99,7 @@ function Hero() {
             </span>
           </div>
 
-          <p className="text-white/38 text-lg leading-relaxed max-w-[500px] mb-10">
+          <p className="text-white/58 text-lg leading-relaxed max-w-[500px] mb-10">
             One-stop fashion sourcing with 200+ years of combined management expertise.
             Design, production, quality, and compliance across six manufacturing countries.
           </p>
@@ -176,7 +176,7 @@ function BrandGrid() {
               style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>
               Brands We've<br />Worked With
             </h2>
-            <p className={`text-white/35 text-[15px] max-w-sm leading-relaxed reveal reveal-d2 ${inView ? 'in-view' : ''}`}>
+            <p className={`text-white/55 text-[15px] max-w-sm leading-relaxed reveal reveal-d2 ${inView ? 'in-view' : ''}`}>
               Long-lasting relationships built over two decades with the world's most recognised fashion and retail names.
             </p>
           </div>
@@ -191,7 +191,7 @@ function BrandGrid() {
 
         <div className={`mt-12 reveal reveal-d5 ${inView ? 'in-view' : ''}`}>
           <Link to="/contact"
-            className="inline-flex items-center gap-3 text-white/35 hover:text-[#F97316] text-[12px] font-semibold tracking-[0.12em] uppercase transition-colors duration-200">
+            className="inline-flex items-center gap-3 text-white/55 hover:text-[#F97316] text-[12px] font-semibold tracking-[0.12em] uppercase transition-colors duration-200">
             Become a Client
             <svg width="14" height="8" viewBox="0 0 14 8" fill="none">
               <path d="M0 4H12M9 1L12 4L9 7" stroke="currentColor" strokeWidth="1.2" strokeLinecap="square" />
@@ -251,7 +251,7 @@ function BrandCard({ brand }: { brand: Brand }) {
           </div>
         )}
       </div>
-      <span className="text-white/35 group-hover:text-white/65 text-[10px] md:text-[11px] font-semibold tracking-wide text-center leading-tight transition-colors duration-300">
+      <span className="text-white/55 group-hover:text-white/65 text-[10px] md:text-[11px] font-semibold tracking-wide text-center leading-tight transition-colors duration-300">
         {brand.name}
       </span>
     </div>

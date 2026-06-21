@@ -23,7 +23,7 @@ export default function TeamPage() {
             THE PEOPLE<br />BEHIND THE<br />
             <span className="text-[#F97316]">SOURCING.</span>
           </h1>
-          <p className="text-white/35 mt-6 text-[15px] max-w-2xl leading-relaxed">
+          <p className="text-white/55 mt-6 text-[15px] max-w-2xl leading-relaxed">
             Our founder spent his career inside the brands he now serves — bringing genuine client-side empathy to every sourcing decision.
           </p>
         </div>
@@ -37,13 +37,13 @@ export default function TeamPage() {
             <div className={`reveal ${inView1 ? 'in-view' : ''}`}>
               <div className="relative">
                 <div className="relative overflow-hidden aspect-[4/5] bg-[#111]">
-                  <img src="https://picsum.photos/seed/os-vikram/480/600"
+                  <img src="/vikram.png"
                     alt="Vikram Bagga"
-                    className="w-full h-full object-cover"
-                    style={{ opacity: 0.55, filter: 'grayscale(20%)' }}
+                    className="w-full h-full object-cover object-top"
+                    style={{ opacity: 0.92 }}
                     loading="lazy" />
                   <div className="absolute inset-0"
-                    style={{ background: 'linear-gradient(to top, #0D0D0D 0%, rgba(13,13,13,0.2) 55%, transparent 100%)' }} />
+                    style={{ background: 'linear-gradient(to top, #0D0D0D 0%, rgba(13,13,13,0.05) 45%, transparent 100%)' }} />
                   {/* Experience badge */}
                   <div className="absolute bottom-5 left-5 bg-[#F97316] px-4 py-2.5">
                     <span className="text-[#0A0A0A] text-[11px] font-black tracking-[0.2em] uppercase">20+ Years</span>
@@ -55,10 +55,10 @@ export default function TeamPage() {
 
               {/* Brand tags below photo */}
               <div className="mt-6">
-                <div className="text-white/20 text-[10px] font-bold tracking-[0.2em] uppercase mb-3">Notable Past Clients</div>
+                <div className="text-white/38 text-[10px] font-bold tracking-[0.2em] uppercase mb-3">Notable Past Clients</div>
                 <div className="flex flex-wrap gap-2">
                   {['Gap', 'Old Navy', 'Adidas', 'Reebok', 'Nordstrom', "Dillard's", 'New Look'].map(b => (
-                    <span key={b} className="px-2.5 py-1 bg-white/[0.04] border border-white/[0.07] text-white/35 text-[11px] font-medium">
+                    <span key={b} className="px-2.5 py-1 bg-white/[0.04] border border-white/[0.07] text-white/55 text-[11px] font-medium">
                       {b}
                     </span>
                   ))}
@@ -69,7 +69,7 @@ export default function TeamPage() {
             {/* Bio */}
             <div>
               <div className={`reveal reveal-d1 ${inView1 ? 'in-view' : ''}`}>
-                <div className="text-white/20 text-[10px] font-bold tracking-[0.2em] uppercase mb-2">Chief Executive Officer</div>
+                <div className="text-white/38 text-[10px] font-bold tracking-[0.2em] uppercase mb-2">Chief Executive Officer</div>
                 <h2 className="font-outfit font-black text-white leading-tight mb-2"
                   style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>
                   Vikram Bagga
@@ -77,7 +77,7 @@ export default function TeamPage() {
                 <div className="w-12 h-[2px] bg-[#F97316] mb-8 mt-4" />
               </div>
 
-              <div className={`space-y-5 text-white/42 text-[15px] leading-relaxed reveal reveal-d2 ${inView1 ? 'in-view' : ''}`}>
+              <div className={`space-y-5 text-white/60 text-[15px] leading-relaxed reveal reveal-d2 ${inView1 ? 'in-view' : ''}`}>
                 <p>
                   Vikram has been associated with apparel sourcing for over 20 years, building deep expertise across
                   woven fabrics, knitwear, sportswear, denim, and premium leather goods. His career has taken him
@@ -111,7 +111,7 @@ export default function TeamPage() {
                 ].map(item => (
                   <div key={item.label} className="flex flex-col gap-0.5">
                     <div className="text-white font-semibold text-[13px]">{item.label}</div>
-                    <div className="text-white/25 text-[11px]">{item.note}</div>
+                    <div className="text-white/42 text-[11px]">{item.note}</div>
                   </div>
                 ))}
               </div>
@@ -128,7 +128,7 @@ export default function TeamPage() {
               style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}>
               An extended team<br />of specialists.
             </h2>
-            <p className={`text-white/35 text-[15px] leading-relaxed reveal reveal-d1 ${inView2 ? 'in-view' : ''}`}>
+            <p className={`text-white/55 text-[15px] leading-relaxed reveal reveal-d1 ${inView2 ? 'in-view' : ''}`}>
               Beyond leadership, Orange Sourcing operates with an in-house design studio, country-level operations teams, and a craft centre staffed by master artisans.
             </p>
           </div>
@@ -163,7 +163,7 @@ export default function TeamPage() {
                 <div className="w-6 h-[2px] bg-[#F97316] mb-5 group-hover:w-12 transition-all duration-400" />
                 <div className="font-outfit font-black text-white text-[15px] mb-1">{d.dept}</div>
                 <div className="text-[#F97316] text-[10px] font-bold tracking-[0.16em] uppercase mb-3">{d.lead}</div>
-                <p className="text-white/28 text-[13px] leading-relaxed group-hover:text-white/40 transition-colors duration-300">{d.skills}</p>
+                <p className="text-white/48 text-[13px] leading-relaxed group-hover:text-white/40 transition-colors duration-300">{d.skills}</p>
               </div>
             ))}
           </div>
@@ -175,7 +175,7 @@ export default function TeamPage() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
             <h3 className="font-outfit font-black text-white text-2xl md:text-3xl mb-2">Work with our team.</h3>
-            <p className="text-white/35 text-[15px]">20+ years of sourcing expertise, entirely at your disposal.</p>
+            <p className="text-white/55 text-[15px]">20+ years of sourcing expertise, entirely at your disposal.</p>
           </div>
           <Link to="/contact"
             className="flex-shrink-0 inline-flex items-center gap-3 px-8 py-4 bg-[#F97316] text-white font-bold text-sm tracking-wide hover:bg-[#EA580C] transition-colors duration-150">
