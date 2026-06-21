@@ -23,7 +23,7 @@ export default function Nav() {
         {/* Logo */}
         <Link to="/" className="group">
           <img
-            src="https://orangesourcing.com/wp-content/uploads/2020/04/Orange-Sourcing-White-Logo-Web.png"
+            src="/logo-os-full.png"
             alt="Orange Sourcing"
             className="h-8 w-auto object-contain group-hover:opacity-80 transition-opacity duration-200"
           />

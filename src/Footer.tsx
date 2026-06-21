@@ -20,7 +20,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="inline-block mb-5">
               <img
-                src="https://orangesourcing.com/wp-content/uploads/2020/04/Orange-Sourcing-White-Logo-Web.png"
+                src="/logo-os-full.png"
                 alt="Orange Sourcing"
                 className="h-8 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-200"
               />
