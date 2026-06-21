@@ -55,14 +55,31 @@ function Hero() {
   }, [])
 
   return (
-    <section className="min-h-[100dvh] bg-[#0A0A0A] flex items-center relative overflow-hidden" style={{ paddingTop: '68px' }}>
-      <div className="absolute right-[5%] top-1/4 w-[700px] h-[700px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(249,115,22,0.055) 0%, transparent 68%)', animation: 'ambient-pulse 5s ease-in-out infinite' }} />
-      <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'linear-gradient(rgba(249,115,22,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(249,115,22,0.07) 1px, transparent 1px)', backgroundSize: '90px 90px', opacity: 0.35 }} />
+    <section className="min-h-[100dvh] relative overflow-hidden flex items-center" style={{ paddingTop: '68px' }}>
 
-      <div className="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-[3fr_2fr] gap-12 lg:gap-20 items-center py-20 lg:py-28">
-        <div>
+      {/* Video background */}
+      <video
+        autoPlay loop muted playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ opacity: 0.65 }}
+      >
+        <source src="/hero-bg.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark base so page doesn't flash white on load */}
+      <div className="absolute inset-0 bg-[#0A0A0A] -z-10" />
+
+      {/* Left-heavy overlay — keeps text readable, lets right side breathe */}
+      <div className="absolute inset-0 pointer-events-none"
+        style={{ background: 'linear-gradient(100deg, rgba(10,10,10,0.88) 0%, rgba(10,10,10,0.55) 50%, rgba(10,10,10,0.15) 100%)' }} />
+
+      {/* Bottom fade into next section */}
+      <div className="absolute inset-x-0 bottom-0 h-44 pointer-events-none"
+        style={{ background: 'linear-gradient(to top, #0A0A0A 0%, transparent 100%)' }} />
+
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-6 w-full py-20 lg:py-28 relative z-10">
+        <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 mb-8">
             <div className="w-4 h-[1px] bg-[#F97316]" />
             <span className="text-[#F97316] text-[11px] font-bold tracking-[0.22em] uppercase">Fashion Sourcing · India</span>
@@ -87,7 +104,7 @@ function Hero() {
             Design, production, quality, and compliance across six manufacturing countries.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-12">
+          <div className="flex flex-wrap gap-4">
             <Link to="/contact"
               className="inline-flex items-center gap-3 px-7 py-4 bg-[#F97316] text-white font-bold text-sm tracking-wide hover:bg-[#EA580C] transition-colors duration-150 active:scale-[0.97]">
               Start a Partnership
@@ -96,19 +113,6 @@ function Hero() {
               className="inline-flex items-center gap-3 px-7 py-4 border border-white/12 text-white/60 font-semibold text-sm hover:border-white/25 hover:text-white transition-all duration-200">
               Explore Our Work
             </Link>
-          </div>
-
-        </div>
-
-        <div className="hidden lg:block">
-          <div className="relative">
-            <div className="relative overflow-hidden aspect-[3/4]">
-              <img src="https://picsum.photos/seed/os-hero-main/500/667" alt="Fashion editorial"
-                className="w-full h-full object-cover" style={{ opacity: 0.45, filter: 'grayscale(20%)' }} />
-              <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #0A0A0A 0%, transparent 60%)' }} />
-            </div>
-            <div className="absolute -top-3 -right-3 w-14 h-14 border-t-2 border-r-2 border-[#F97316]" />
-            <div className="absolute -bottom-3 -left-3 w-14 h-14 border-b-2 border-l-2 border-[#F97316]" />
           </div>
         </div>
       </div>
