@@ -182,10 +182,10 @@ export default function ServicesPage() {
 
             <div className={`relative reveal reveal-d2 ${inView3 ? 'in-view' : ''}`}>
               <div className="relative overflow-hidden aspect-[4/3]">
-                <img src="https://picsum.photos/seed/os-factory/600/450"
-                  alt="Factory production"
-                  className="w-full h-full object-cover"
-                  style={{ opacity: 0.5, filter: 'grayscale(20%)' }}
+                <img src="/services-office.jpg"
+                  alt="Orange Sourcing operations"
+                  className="w-full h-full object-cover object-center"
+                  style={{ opacity: 0.82 }}
                   loading="lazy" />
                 <div className="absolute inset-0"
                   style={{ background: 'linear-gradient(135deg, transparent 50%, #0D0D0D 100%)' }} />

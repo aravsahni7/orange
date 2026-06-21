@@ -63,10 +63,10 @@ export default function AboutPage() {
             <div className={`reveal ${inView1 ? 'in-view' : ''}`}>
               <div className="relative">
                 <div className="relative overflow-hidden aspect-[4/5]">
-                  <img src="https://picsum.photos/seed/os-about-craft/600/750"
-                    alt="Artisans at work"
-                    className="w-full h-full object-cover"
-                    style={{ opacity: 0.6, filter: 'grayscale(15%)' }}
+                  <img src="/about-office.png"
+                    alt="Orange Sourcing office, Gurgaon"
+                    className="w-full h-full object-cover object-center"
+                    style={{ opacity: 0.85 }}
                     loading="lazy" />
                   <div className="absolute inset-0"
                     style={{ background: 'linear-gradient(135deg, transparent 40%, #0A0A0A 100%)' }} />
