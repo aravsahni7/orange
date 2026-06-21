@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useInView } from '../hooks'
 import Counter from '../Counter'
-import { COUNTRIES, TICKER } from '../data'
+import { TICKER } from '../data'
 
 interface Brand {
   name: string
