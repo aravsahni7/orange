@@ -63,7 +63,7 @@ function Hero() {
         className="absolute inset-0 w-full h-full object-cover"
         style={{ opacity: 0.65 }}
       >
-        <source src="/hero-bg.mp4" type="video/mp4" />
+        <source src={import.meta.env.BASE_URL + 'hero-bg.mp4'} type="video/mp4" />
       </video>
 
       {/* Dark base so page doesn't flash white on load */}
@@ -348,7 +348,7 @@ function ScrollVideoSection() {
         {/* Video — all-I-frame re-encode for smooth seeking */}
         <video
           ref={videoRef}
-          src="/craft-bag-cropped.mp4"
+          src={import.meta.env.BASE_URL + 'craft-bag-cropped.mp4'}
           muted playsInline preload="auto"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ opacity: 0.78 }}

@@ -20,7 +20,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="inline-block mb-5">
               <img
-                src="/logo-os-full.png"
+                src={import.meta.env.BASE_URL + 'logo-os-full.png'}
                 alt="Orange Sourcing"
                 className="h-8 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-200"
               />

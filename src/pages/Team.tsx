@@ -37,7 +37,7 @@ export default function TeamPage() {
             <div className={`reveal ${inView1 ? 'in-view' : ''}`}>
               <div className="relative">
                 <div className="relative overflow-hidden aspect-[4/5] bg-[#111]">
-                  <img src="/vikram.png"
+                  <img src={import.meta.env.BASE_URL + 'vikram.png'}
                     alt="Vikram Bagga"
                     className="w-full h-full object-cover object-top"
                     style={{ opacity: 0.92 }}

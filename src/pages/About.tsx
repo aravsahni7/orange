@@ -63,7 +63,7 @@ export default function AboutPage() {
             <div className={`reveal ${inView1 ? 'in-view' : ''}`}>
               <div className="relative">
                 <div className="relative overflow-hidden aspect-[4/5]">
-                  <img src="/about-office.png"
+                  <img src={import.meta.env.BASE_URL + 'about-office.png'}
                     alt="Orange Sourcing office, Gurgaon"
                     className="w-full h-full object-cover object-center"
                     style={{ opacity: 0.85 }}

@@ -182,7 +182,7 @@ export default function ServicesPage() {
 
             <div className={`relative reveal reveal-d2 ${inView3 ? 'in-view' : ''}`}>
               <div className="relative overflow-hidden aspect-[4/3]">
-                <img src="/services-office.jpg"
+                <img src={import.meta.env.BASE_URL + 'services-office.jpg'}
                   alt="Orange Sourcing operations"
                   className="w-full h-full object-cover object-center"
                   style={{ opacity: 0.82 }}

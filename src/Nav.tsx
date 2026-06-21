@@ -23,7 +23,7 @@ export default function Nav() {
         {/* Logo */}
         <Link to="/" className="group">
           <img
-            src="/logo-os-full.png"
+            src={import.meta.env.BASE_URL + 'logo-os-full.png'}
             alt="Orange Sourcing"
             className="h-8 w-auto object-contain group-hover:opacity-80 transition-opacity duration-200"
           />
