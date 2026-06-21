@@ -76,7 +76,7 @@ export default function ContactPage() {
                 {[
                   {
                     label: 'Corporate Office',
-                    value: 'Plot No. 252 (GF)\nUdyog Vihar Phase-I\nGurgaon, Haryana 122016\nIndia',
+                    value: 'Plot No. 252 (GF), Udyog Vihar Phase - I,\nGurgaon, Haryana, 122016, India',
                     href: undefined,
                     icon: (
                       <svg width="12" height="14" viewBox="0 0 12 14" fill="none">

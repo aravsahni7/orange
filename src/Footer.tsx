@@ -52,7 +52,7 @@ export default function Footer() {
                     <path d="M4 0C2 0 0 1.8 0 4C0 7 4 10 4 10C4 10 8 7 8 4C8 1.8 6 0 4 0ZM4 5.5C3.2 5.5 2.5 4.8 2.5 4C2.5 3.2 3.2 2.5 4 2.5C4.8 2.5 5.5 3.2 5.5 4C5.5 4.8 4.8 5.5 4 5.5Z" fill="currentColor" />
                   </svg>
                 </div>
-                <span>Plot 252, Udyog Vihar Phase-I<br />Gurgaon, Haryana, India</span>
+                <span>Plot No. 252 (GF), Udyog Vihar Phase - I,<br />Gurgaon, Haryana, 122016, India</span>
               </div>
             </div>
           </div>
