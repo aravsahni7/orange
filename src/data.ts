@@ -45,7 +45,7 @@ export const PORTFOLIO = [
   { id: 6,  title: 'Casual Coordinates',        cat: 'Apparel',     img: 'https://img.freepik.com/free-photo/young-beautiful-woman-wearing-fashion-urban-clothes-model-wearing-casual-street-style-standing-pink-background_839833-8893.jpg?w=480&q=80' },
   { id: 7,  title: 'Scarves and Accessories',   cat: 'Accessories', img: 'https://orangesourcing.com/wp-content/uploads/2020/05/Scarf-OS-3.jpg' },
   { id: 8,  title: 'Jewellery Collection',      cat: 'Accessories', img: 'https://i.pinimg.com/564x/1f/30/bb/1f30bb2b32936b05057a0650c42d9a63.jpg' },
-  { id: 9,  title: 'Belts and Small Leather',   cat: 'Accessories', img: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=480&h=620&fit=crop&q=80' },
+  { id: 9,  title: 'Belts and Small Leather',   cat: 'Accessories', img: '/portfolio-belts.jpg' },
   { id: 10, title: 'Leather Handbags',          cat: 'Leather',     img: 'https://orangesourcing.com/wp-content/uploads/2020/05/Womenwear-Bag-Leather.jpg' },
   { id: 11, title: 'Footwear',                  cat: 'Leather',     img: 'https://orangesourcing.com/wp-content/uploads/2020/05/OS-Shoes-5.jpg' },
   { id: 12, title: 'Leather Gloves and Caps',   cat: 'Leather',     img: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=480&h=620&fit=crop&q=80' },
