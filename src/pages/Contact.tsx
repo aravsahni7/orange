@@ -202,7 +202,7 @@ export default function ContactPage() {
       <div className="w-full border-t border-white/[0.06]">
         <iframe
           title="Orange Sourcing Office Location"
-          src="https://maps.google.com/maps?q=Udyog+Vihar+Phase+1+Gurugram+Haryana+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          src="https://maps.google.com/maps?q=Plot+No+252+Udyog+Vihar+Phase+I+Gurugram+Haryana+122016+India&t=&z=18&ie=UTF8&iwloc=&output=embed"
           width="100%"
           height="480"
           style={{ display: 'block', border: 0, filter: 'invert(90%) hue-rotate(180deg) grayscale(20%)' }}
