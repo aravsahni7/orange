@@ -290,6 +290,30 @@ function ScrollVideoSection() {
   const [phase, setPhase] = useState(0)
 
   useEffect(() => {
+    const video = videoRef.current
+    if (video) {
+      // iOS Safari needs webkit-playsinline and an explicit load call
+      video.setAttribute('webkit-playsinline', '')
+      video.load()
+
+      // iOS Safari blocks currentTime seeking on a never-played video.
+      // A silent play→pause unlocks the seek buffer so RAF scrubbing works.
+      const unlockSeeking = () => {
+        const p = video.play()
+        if (p !== undefined) {
+          p.then(() => {
+            video.pause()
+            video.currentTime = 0
+          }).catch(() => {})
+        }
+      }
+      if (video.readyState >= 1) {
+        unlockSeeking()
+      } else {
+        video.addEventListener('loadedmetadata', unlockSeeking, { once: true })
+      }
+    }
+
     const onScroll = () => {
       const el = wrapRef.current
       if (!el) return
@@ -302,9 +326,9 @@ function ScrollVideoSection() {
       // Lerp — video lags scroll slightly for a weighted, cinematic feel
       progressRef.current += (targetRef.current - progressRef.current) * 0.07
 
-      const video = videoRef.current
-      if (video && video.readyState >= 2 && video.duration) {
-        video.currentTime = progressRef.current * video.duration
+      const v = videoRef.current
+      if (v && v.readyState >= 1 && v.duration) {
+        v.currentTime = progressRef.current * v.duration
       }
 
       // Parallax: text drifts up 40px across full scroll — direct DOM, no re-render
