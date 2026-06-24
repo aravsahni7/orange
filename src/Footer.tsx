@@ -127,7 +127,7 @@ export default function Footer() {
             <span className="text-white/35 text-[11px]">Powered by</span>
             <div className="bg-white px-4 py-2 group-hover:opacity-90 transition-opacity duration-200">
               <img
-                src="https://www.futuresource.ca/assets/logo-B2ylbOep.webp"
+                src={import.meta.env.BASE_URL + 'futuresource-logo.webp'}
                 alt="FutureSource"
                 className="h-5 w-auto"
               />
